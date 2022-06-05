@@ -5,7 +5,7 @@ if(argv.length == 4){
     const execute = require('./executeBytecode');
     const sourceFile = argv[2];
     const bycd = compile(fs.readFileSync(sourceFile, 'utf-8'));
-    console.log(bycd);
+    // console.log(bycd);
     fs.writeFileSync(argv[3], bycd);
     execute(bycd);
 } else if (argv.length == 3){

@@ -1,1 +1,1 @@
-run = "node index.js main.k out.okay"
+run = "node --trace-uncaught index.js main.kasm out.ok"
